@@ -18,6 +18,9 @@ div {
   width: 100%;
 
 }
+img {
+  width: 300px;
+}
 @keyframes slideup{
   from{transform: translateY(100px)}
 }
