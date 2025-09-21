@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Ebook about trading</title>
+</head>
+
+<body>
+
+   <h1>Drop shipping & Trading</h1>
+  <header>
+    <nav>
+      <a href="trading.html">Trading</a>
+      <a href="about.html">About</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header> 
+    <button id="darkmode">Darkmode</button>
+  <button id="lightmode">lightmode</button>
+  <div id="mydiv1">
+    <h2>How to start drop-shipping</h2>
+    <hr>
+   <h4>Before you start something you need to what it is</h4>
+   <h5>Drop shipping </h5>
+   <p>This is a way of selling products online without handling them by yourself acting as a middle man in a deal</p><br>
+   <p>
+     in drop shipping there is what we call a supplier and customer.
+     the customer is the one you're offering your services to and the supplier is the one providing 
+     
+   </p>
+   <p> You have probably heard about jumia / kilimali/konga these companies are a good example of drop shipping</p>
+  <p>All they do is simple,# they store a product in stock and sell it to customer raising to a certain profit for earning</p>
+  <p>here in drop shipping the way ro achieve something is with consistency and learning how to manage prices and how to talk to customer in sales</p>
+  </div><br>
+  <img src="https://cdn.pixabay.com/photo//04/23/22/00/tree-736885_1280.jpg" class="slideup"/>
+  <div id="mydiv2">
+    <h3>Let's start what we came for👍</h3>
+    <p>Okay now you've probably been wondering how to start this business model</p>
+     <h4>Create an online store on the following websites</h4>
+       <h5>online stores</h5>
+       <ul>
+         <li>shopify</li>
+         <li>wix</li>
+         <li>big commerce</li>
+       </ul>
+       <p>But i would recommendshopify for a beginner</p>
+       
+     </p>
+     <h4>step 2 create a niche</h4>
+     <p>a niche is a specific category or target audience for your products. instead of selling everything you focus on one area to stand out</p>
+     <p> for example <li> General: clothes too broad;</li> <li> niche: Eco-friendly: clothes for women  specific and easier for women; </li>
+      <h4>Why a niche matters?😏</h4>
+       <ol>
+         <li>
+           less competition 
+         </li>
+         <li>
+           Easier to find and attract customers 
+         </li>
+         <li>
+           makes your marketing focused 
+         </li>
+       </ol>
+       <p>so in drop shipping a nicbe could be anything like electronics etc</p>
+     </p>
+  </div><br>
+  
+  <h4>If you're bored you could probably click here to get a random quote</h4>
+  <button id="mybutton">Click</button>
+  <button id="deletebtn">Clear quotes</button>
+  <ul id="quoteslist">
+  </ul>
+  <div id="mydiv5">
+      <h4>step3 get a supplier</h4> 
+   <p>a supplier is where  you are getting products, (<small>a supplier could be a person or something else we are going to talk about </small>)</p>
+   <h5>These are the best suppliers  you could get</h5>
+   <ol>
+     <li>Ali express✅</li>
+     <li>Spocket</li>
+     <li>modalyst</li>
+     <li>Cj dropshipping</li>
+   </ol>
+   <p>For a beginner 1 would work</p>
+   <h5>After you're done with that</h5>
+  </div><br>
+  <div id="mydiv4"><form></form>
+    <h3>step4 start the business</h3>
+    <p>And now after the last steps you are going to choose a certain product from the supplier and i want you to get the following details
+    <ul>
+      <li>Price</li>
+      <li>The use of the product to the audience </li>
+      <li>Name</li>
+      <li>category</li> 
+      <li>Description</li>
+      <li>Picture</li>
+    </ul> 
+    <p> And now after getting the details you're going to your online store andstart creating a product based on the following details they will ask for</p>
+    <p>If you're done with that then supply note but Shopify has a condition you are given sometime without paying for storing your products</p>
+    <h4>The good in dropshipping</h4>
+    <ol>
+      <li>You are making profit by selling the product from the supplier a little higher</li>
+      <li>You are setting up you're own foundation to growth in sales </li>
+      <li>The trick in dropshipping is that you have to give it tome to work </li>
+    </ol>
+    </p>
+  </div><br>
+  <div id="mydiv3">
+    <p id="myp">🎉🎉</p>
+    <h3>Congratulations you have reached the end</h3>
+  </div>
+  <footer>
+    <p>Please click the donate button if you like my services </p>
+  </footer>
+
+</body>
+<script>
+const mybutton = document.getElementById("mybutton");
+const deletebtn = document.getElementById("deletebtn");
+const ul = document.getElementById("quoteslist");
+  const button= document.getElementById("lightmode");
+  const mybuton = document.getElementById("darkmode");
+  button.onclick = function() {
+    document.body.style.backgroundColor ="white";
+  }
+  mybuton.onclick = function() {
+    document.body.style.backgroundColor = "darkolivegreen";
+  }
+  mybutton.addEventListener("click",() => {
+    let quotes=["Never give up on your dreams", "Have faith in God He will help you in what you do", "Failure is better than regret","Remember to keep going in whatever situation","No one would understand your dream until your actions speak","Consistency is the mother of mastery.","A dream written down with a date becomes a goal.","Winners are not those who never fail, but those who never quit.","Discipline beats motivation every time.","Your future is created by what you do today, not tomorrow."];
+
+    let randomIndex = Math.floor(Math.random()*quotes.length);
+        let randomquote = quotes[randomIndex];
+    const li = document.createElement("li");
+    li.textContent = randomquote;
+    ul.appendChild(li);
+    
+  
+  });
+  deletebtn.onclick = function() {
+    ul.textContent ="";
+  }
+</script>
+</html>
